@@ -61,8 +61,9 @@ class Image:
                     im_bin.pixels[i,k] = 255
         # TODO: boucle imbriquees pour parcourir tous les pixels de l'image im_bin
         # et calculer l'image binaire
-        
         return im_bin  
+    
+    
     #==============================================================================
     # Dans une image binaire contenant une forme noire sur un fond blanc
     # la methode 'localisation' permet de limiter l'image au rectangle englobant
@@ -98,7 +99,9 @@ class Image:
     # Methode de redimensionnement d'image
     #==============================================================================
     def resize(self, new_H, new_W):
-        pass
+        im_resized = Image()
+        im_resized.pixels = resize(self.pixels , (new_H,new_W) , 0)
+        return im_resized
 
 
     #==============================================================================
