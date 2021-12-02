@@ -30,7 +30,7 @@ if __name__ == '__main__':
     #==============================================================================
     # Binarisation de l'image et affichage
     #==============================================================================
-    S = 70
+    S = 200
     image_binarisee = image.binarisation(S)
     image_binarisee.display("Image binarisee")
 
@@ -52,4 +52,5 @@ if __name__ == '__main__':
     liste_modeles = lecture_modeles(path_to_assets)
     chiffre = reconnaissance_chiffre(image, liste_modeles, 70)
     print("Le chiffre reconnu est : ", chiffre)
-    
+
+print(image.similitude(image_binarisee))
