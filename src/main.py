@@ -30,7 +30,7 @@ if __name__ == '__main__':
     #==============================================================================
     # Binarisation de l'image et affichage
     #==============================================================================
-    S = 70
+    S = 100
     image_binarisee = image.binarisation(S)
     image_binarisee.display("Image binarisee")
 
@@ -53,6 +53,3 @@ if __name__ == '__main__':
     chiffre = reconnaissance_chiffre(image, liste_modeles, 70)
     print("Le chiffre reconnu est : ", chiffre)
     
-    print(image.binarisation(200))
-    print(image.localisation())
-    im_relocalise = image.localisation()

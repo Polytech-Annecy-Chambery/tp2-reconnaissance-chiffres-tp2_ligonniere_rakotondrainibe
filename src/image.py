@@ -108,5 +108,11 @@ class Image:
     # Methode de mesure de similitude entre l'image self et un modele im
     #==============================================================================
     def similitude(self, im):
-        pass
+        pixels_commun = 0
+        if self.H == im.H and self.W == im.W:
+            for i in range(self.H):
+                for k in range(self.W):
+                    if self.pixels[i,k] == im.pixels[i,k]:
+                        pixels_commun += 1
+        return pixels_commun/(self.H*self.W)
 
