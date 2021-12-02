@@ -56,4 +56,3 @@ if __name__ == '__main__':
     print(image.binarisation(200))
     print(image.localisation())
     im_relocalise = image.localisation()
-    print(im_relocalise.resize(50, 50))
